@@ -1,0 +1,12 @@
+{
+    "user": "Fritz",
+    "inIsPremiumTeaser": true,
+    "teasers": [
+        {
+            "name": "Teaser 1"
+        },
+        {
+            "name": "Teaser 2"
+        }
+    ]
+}

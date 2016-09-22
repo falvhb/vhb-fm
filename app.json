@@ -1,0 +1,12 @@
+{
+  "name": "Freemarker Server",
+  "description": "This app does one little thing, and does it well.",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
