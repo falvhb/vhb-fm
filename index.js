@@ -12,6 +12,7 @@ var fm = new Freemarker({
   }
 });
 
+console.log('Root Dir: "' +  __dirname + '/template"');
 
 var CONFIG = {
     templates: ['index', 'article'],
@@ -56,10 +57,10 @@ app.get('/', function (req, res) {
     };
 
     fm.render(template.templateName, template.data, function(err, html, output) {
-        console.log(template.templateName + '> ' + html.length + 'chars');
         if (err){
-            res.send(err);
+            res.send({err: err, output: output, html: html});
         } else {
+            console.log(template.templateName + '> ' + (html ? html.length : 'Undefined') + 'chars');
             res.send(beautify_html(html));
         }
         
