@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
+    "freemarker.js": "^1.2.2",
     "js-beautify": "^1.6.4"
   }
 }
